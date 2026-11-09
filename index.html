@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ابشیرین‌کن بندرلنگه | گزیر دژ</title>
+
+  <!--توضیخی که زیر عنوان سایت در نتایج گوگل نشان داده میشود-->
+  <meta name="description" content="شرکت گزیر دژ : طراحی , تامین , ساخت و اجرای سیستم های اب شیرین کن صنعتی . اب شیرین کن بندرلنگه , هرمزگان">
+  
+  <!--ایکون تب مرورگر-->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Tailwind: اگر این آدرس برایت باز نمی‌شود، فایل را دانلود کن و به جایش بنویس: <script src="tailwind.js"></script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- فونت فارسی (اختیاری، نیاز به اینترنت دارد) -->
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+
+
+
+
+
+  <style>
+    body { font-family: 'Vazirmatn', Tahoma, sans-serif; }
+
+    /* بخش‌ها اول نامرئی و کمی پایین‌تر هستند */
+    .reveal { opacity: 0; transform: translateY(40px); transition: all .8s ease; }
+    .reveal.show { opacity: 1; transform: translateY(0); }
+
+    /* حرکت شناور برای دایره‌های پس‌زمینه */
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-30px); } }
+    .float { animation: float 6s ease-in-out infinite; }
+
+    @keyframes zoom {from { transform: scale(1);} to {transform: scale(1.12);}}
+    .hero-img {animation: zoom 20s ease-in-out infinite alternate;}
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- منو (شیشه‌ای و ثابت) -->
+  <nav class="fixed top-0 w-full z-50 bg-blue-900/80 backdrop-blur-md text-white px-6 py-3 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+      <img src="image/gezir-dej-logo-header.svg" alt="لوگو" class="h-[60px] w-15 object-contain">
+      <span class="hidden sm:inline text-2xl font-bold ">گزیر دژ</span>
+    </div>
+    <div class="flex gap-5 text-lg font-medium">
+      <a href="#home" class="hover:text-cyan-300 transition">خانه</a>
+      <a href="#" id="open-login" class="hover:text-cyan-300 transition">ورود </a>
+      <a href="#gallery" class="hover:text-cyan-300 transition">گالری</a>
+      <a href="#about" class="hover:text-cyan-300 transition">درباره ما</a>
+    </div>
+  </nav>
+
+  <!-- هدر اصلی -->
+  <header id="home" class="relative min-h-screen flex items-center justify-center text-center mb-14 sm:mb-8 text-white overflow-hidden bg-blue-900">
+
+
+    <!--عکس پس زمینه-->
+    <img src="image/inside.jpg" alt="" class="hero-img absolute inset-0 w-full h-full object-cover">
+
+    <!--لایه ابی روی عکس-->
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-900/85 via-blue-900/75 to-cyan-700/60"></div>
+
+
+    <!-- دایره‌های تزئینی -->
+    <div class="float absolute top-20 right-10 w-72 h-72 bg-cyan-400/30 rounded-full blur-3xl"></div>
+    <div class="float absolute bottom-32 left-10 w-80 h-80 bg-teal-300/20 rounded-full blur-3xl" style="animation-delay:2s"></div>
+
+    
+
+
+    <!--متن و دکمه-->
+    <div class="relative z-10 px-6 max-w-3xl">
+      <p class="inline-block bg-white/40 border border-white/20 px-4 py-1 rounded-full text-sm text-stone-50 mb-6">
+        💧  شرکت گزیر دژ
+      </p>
+      <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
+        آب‌شیرین‌کن
+        <span class="bg-gradient-to-l from-cyan-300 to-teal-200 bg-clip-text text-transparent">بندرلنگه</span>
+      </h1>
+      <p class="text-lg text-slate-200 mb-8">
+        از دل دریا، آب شیرین و سالم. .
+      </p>
+      <div class="flex gap-3 justify-center">
+        <a href="#contact" class="border border-white/40 px-6 py-3 rounded-full hover:bg-white/10 transition">
+          تماس با ما
+        </a>
+      </div>
+    </div>
+
+    <!-- موج پایین هدر -->
+    <svg class="absolute bottom-0 w-full" viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path fill="#f8fafc" d="M0,64 C240,120 480,0 720,48 C960,96 1200,16 1440,64 L1440,120 L0,120 Z"/>
+    </svg>
+  </header>
+
+  <!-- مشخصات اصلی (کارت‌ها) -->
+  <section class="max-w-5xl mx-auto px-6 -mt-10 relative z-10 reveal">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div class="bg-white rounded-2xl shadow-xl p-6 text-center border-t-4 border-cyan-400">
+        <p class="text-4xl mb-2">📍</p>
+        <h3 class="font-bold text-lg">موقعیت</h3>
+        <p class="text-slate-500">بندرلنگه، هرمزگان</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-xl p-6 text-center border-t-4 border-blue-500">
+        <p class="text-4xl mb-2">💧</p>
+        <h3 class="font-bold text-lg">ظرفیت تولید</h3>
+        <p class="text-slate-500">10,000 متر مکعب </p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-xl p-6 text-center border-t-4 border-teal-400">
+        <p class="text-4xl mb-2">⚙️</p>
+        <h3 class="font-bold text-lg">روش تصفیه</h3>
+        <p class="text-slate-500">اسمز معکوس</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- گالری -->
+  <section id="gallery" class="bg-slate-50 text-white py-24 scroll-mt-16 reveal">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl text-black font-black text-center mb-12">گالری پروژه</h2>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <!-- هر عکس داخل یک div با افکت هاور -->
+      
+        <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl text-white">
+          <img src="image/outside.jpg" alt="نمای بیرونی سالن ابشیرین‌کن" loading="lazy" class="h-56 w-full object-cover group-hover:scale-110 transition duration-500">
+          <span class="absolute inset-0 bg-gradient-to-t from-cyan-600/80 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4 font-bold">نمای کلی</span>
+        </button>
+
+        <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl text-white">
+          <img src="image/inside.jpg" alt="نمای داخل سالن و ردیف غشاها loading="lazy" class="h-56 w-full object-cover group-hover:scale-110 transition duration-500">
+          <span class="absolute inset-0 bg-gradient-to-t from-cyan-600/80 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4 font-bold">نمای داخل سالن</span>
+        </button>
+
+        <button type="button" class="gallery-item group relative overflow-hidden rounded-2xl text-white">
+          <img src="image/photo_2026-11-08_19-36-44.jpg" alt="شماتیک سه بعدی سایت" loading="lazy" class="h-56 w-full object-cover group-hover:scale-110 transition duration-500">
+          <span class="absolute inset-0 bg-gradient-to-t from-cyan-600/80 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-4 font-bold">شماتیک  سایت</span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- درباره ما -->
+  <section id="about" class="max-w-3xl mx-auto px-6 py-24 scroll-mt-16 reveal">
+    <h2 class="text-3xl font-black text-center mb-4">درباره شرکت گزیر دژ</h2>
+    <div class="bg-slate-100 p-6 rounded-2xl mb-10">
+      <p id="about-text" class="line-clamp-3 text-start text-slate-600 leading-8 font-serif text-xl">
+
+        شرکت گزیر دژ با اتکا به بیش از دو دهه تجربه و فعالیت مستمر، از سال ۱۳۷۶ فعالیت خود را در حوزه پروژه‌های عمرانی، زیرساختی و اجرایی آغاز نموده است. در طول این سال‌ها، با بهره‌گیری از دانش فنی، تجربه اجرایی و رویکردی مبتنی بر کیفیت و تعهد، همواره تلاش کرده‌ایم نقشی مؤثر در اجرای پروژه‌های عمرانی و توسعه زیرساخت‌های کشور ایفا نماییم.
+      در راستای توسعه فعالیت‌ها و همگام شدن با نیازهای روز صنعت، از سال ۱۳۹۷ با ورود تخصصی به حوزه طراحی، تأمین، ساخت و اجرای سیستم‌های آب‌شیرین‌کن صنعتی (Desalination)، فصل جدیدی از فعالیت‌های شرکت آغاز شد. 
+      امروزه با تلفیق تجربه ارزشمند در پروژه‌های عمرانی و دانش فنی در حوزه تصفیه و شیرین‌سازی آب، تمرکز شرکت بر ارائه راهکارهای مهندسی و اجرای پروژه‌های تخصصی در زمینه تأمین آب باکیفیت برای صنایع و مجموعه‌های مختلف است.
+  
+      </p>
+      <button id="toggle-btn" type="button" class="mt-2 text-yellow-700 font-bold hover:underline mt-2">ادامه</button>
+
+    </div>
+  </section>
+
+  <!--تماس با ما-->
+  <section id="contact" class="max-w-3xl mx-auto px-6 py-10 pb-24 scroll-mt-16 reveal">
+    <div class="bg-white rounded-2xl shadow-xl p-8 space-y-4">
+      <a href="tel:07644260594" class="flex items-center gap-3 hover:text-cyan-600 transition">
+        <span class="bg-cyan-100 rounded-full w-10 h-10 flex items-center justify-center">📞</span>
+        <span dir="ltr">076 4426 0594</span>
+      </a>
+      <a href="https://www.google.com/maps/search/?api=1$query=بندر+عباس+چهارراه+پردیس" target="_blank" rel="noopener" class="flex items-center gap-3 hover:text-cyan-600 transition">
+        <span class="bg-cyan-100 rounded-full w-10 h-10 flex items-center justify-center">📍</span>
+        هرمزگان - بندر عباس - چهارراه پردیس - دفتر شرکت گزیردژ
+      </a>
+      <a href="mailto:gezirdejh@gmail.com" class="flex items-center gap-3 hover:text-cyan-600 transition">
+        <span class="bg-cyan-100 rounded-full w-10 h-10 flex items-center justify-center">✉️</span>
+        <span dir="ltr">gezirdejh@gmail.com</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-gradient-to-br from-slate-900 to-blue-900 text-slate-300 text-center py-6 text-sm">
+    © گزیر دژ | ابشیرین‌کن بندرلنگه
+    <span id="year"></span>
+  </footer>
+
+  <!--دکمه شناور تماس فقط در موبایل -->
+  <a href="tel:07644260594" aria-label="تماس تلفنی" class="md:hidden fixed bottom-5 left-5 z-40 bg-cyan-400 text-slate-900 w-14 h-14 rounded-full shadow-xl flex items-center justify-center text-2xl">📞</a>
+
+
+  <!--========پنجره ورود========-->
+  <div id="login" class="hidden fixed inset-0 z-[100] bg-slate-950/70 backdrop-blur-sm items-center justify-center p-4" role="dialog" aria-label="true" aria-labelledby="login-title">
+    <div class="bg-white rounded-3xl shadow-2xl w-full max-w-md p-8 relative">
+      <button id="close-login" type="button" aria-label="بستن" class="absolute top-5 left-5 w-9 h-9 rounded-full text-xl bg-slate-100 text-slate-400 hover:bg-red-100 hover:text-red-600 transition ">&times;</button>
+
+      <!--عنوان-->
+      <div class="text-center mb-8">
+        <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-blue-900 text-white flex items-center justify-center text-3xl">
+          🔐
+        </div>
+        <h2 id="login-title" class="text-2xl font-black text-slate-800 mb-2">ورود به سامانه</h2>
+      </div>  
+      <!-- انتخاب نقش: مدیر یا کارکنان -->
+      <div class="grid grid-cols-2 gap-2 bg-slate-100 p-1 rounded-full mb-5">
+        <button type="button" data-role="manager" class="role-btn rounded-full py-2 font-bold transition">مدیر</button>
+        <button type="button" data-role="staff" class="role-btn rounded-full py-2 font-bold transition">کارکنان</button>
+      </div>
+
+      <form id="login-form" class="space-y-4">
+        <label class="block">
+          <span id="user-label" class="text-sm text-slate-600"></span>
+          <input id="user" type="text" required autocomplete="username" dir="ltr" class="mt-1 w-full border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+        </label>
+        <label class="block">
+          <span class="text-sm text-slate-600">رمز عبور</span>
+          <input id="pass" type="password" required autocomplete="current-password" dir="ltr" class="mt-1 w-full border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+        </label>
+        <button type="submit" class="w-full bg-blue-900 text-white font-bold py-2 rounded-lg hover:bg-blue-800 transition">ورود</button>
+        <p id="login-msg" class="text-sm text-center text-slate-500 min-h-[1.25rem]"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========== نمایش بزرگ عکس گالری ========== -->
+  <div id="lightbox" class="hidden fixed inset-0 z-[100] bg-black/85 items-center justify-center p-4 cursor-zoom-out">
+    <img id="lightbox-img" src="" alt="" class="max-h-full max-w-full rounded-xl">
+  </div>
+  
+  <script>
+    // کمک‌کننده‌ها: نمایش و مخفی کردن یک پنجره (hidden و flex با هم عوض می‌شوند)
+    const show = (el) => { el.classList.remove("hidden"); el.classList.add("flex"); };
+    const hide = (el) => { el.classList.add("hidden"); el.classList.remove("flex"); };
+
+    // ۱) ظاهر شدن بخش‌ها هنگام اسکرول
+    const observer = new IntersectionObserver((items) => {
+      items.forEach(item => { if (item.isIntersecting) item.target.classList.add("show"); });
+    }, { threshold: 0.15 });
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+    // ۲) متن «درباره ما»: سه خط + دکمه ادامه/بستن
+    const text = document.getElementById("about-text");
+    const toggleBtn = document.getElementById("toggle-btn");
+    toggleBtn.addEventListener("click", () => {
+      text.classList.toggle("line-clamp-3");
+      toggleBtn.textContent = text.classList.contains("line-clamp-3") ? "ادامه" : "بستن";
+    });
+    // اگر متن کوتاه بود و بیشتر از سه خط نداشت، دکمه لازم نیست
+    window.addEventListener("load", () => {
+      if (text.scrollHeight <= text.clientHeight) toggleBtn.classList.add("hidden");
+    });
+
+    // ۳) پنجره ورود
+    const login = document.getElementById("login");
+    const userInput = document.getElementById("user");
+    const msg = document.getElementById("login-msg");
+    let role = "manager";
+
+    // نقش را عوض می‌کند: رنگ دکمه‌ها و برچسب فیلد اول
+    function setRole(newRole) {
+      role = newRole;
+      document.querySelectorAll(".role-btn").forEach(btn => {
+        const active = btn.dataset.role === role;
+        btn.classList.toggle("bg-blue-900", active);
+        btn.classList.toggle("text-white", active);
+        btn.classList.toggle("text-slate-500", !active);
+      });
+      document.getElementById("user-label").textContent = role === "manager" ? "نام کاربری" : "کد پرسنلی";
+      msg.textContent = "";
+    }
+    document.querySelectorAll(".role-btn").forEach(btn =>
+      btn.addEventListener("click", () => setRole(btn.dataset.role)));
+
+    document.getElementById("open-login").addEventListener("click", (e) => { e.preventDefault(); setRole("manager"); show(login); userInput.focus(); });
+    document.getElementById("close-login").addEventListener("click", () => hide(login));
+    login.addEventListener("click", (e) => { if (e.target === login) hide(login); }); // کلیک بیرون کادر
+
+    document.getElementById("login-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const data = { role, user: userInput.value.trim(), pass: document.getElementById("pass").value };
+      // هشدار: رمز را هرگز داخل جاوااسکریپت بررسی نکن (هر کسی می‌تواند ببیند).
+      // اینجا باید داده به سرور فرستاده شود، مثلاً: fetch("/api/login", { method: "POST", body: JSON.stringify(data) })
+      console.log("اطلاعات ورود (فعلاً فقط نمایشی):", data.role, data.user);
+      msg.textContent = "ورود هنوز به سرور متصل نیست.";
+    });
+
+    // ۴) نمایش بزرگ عکس‌های گالری
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    document.querySelectorAll(".gallery-item").forEach(item => {
+      item.addEventListener("click", () => {
+        const img = item.querySelector("img");
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        show(lightbox);
+      });
+    });
+    lightbox.addEventListener("click", () => hide(lightbox));
+
+    // ۵) بستن پنجره‌ها با کلید Esc
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") { hide(login); hide(lightbox); }
+    });
+
+    // ۶) سال فوتر به‌صورت خودکار
+    document.getElementById("year").textContent = new Date().toLocaleDateString("fa-IR", { year: "numeric" });
+  </script>
+
+</body>
+</html>
